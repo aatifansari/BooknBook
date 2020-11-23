@@ -1,96 +1,87 @@
 <!DOCTYPE html>
-<html>
-	<head></head>
-	<body>
-		<header>
-			<nav>
-			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Store</li>
-			</ul>
-		</nav>
-		<hr>
-		<h1>BooknBook Store</h1>
-		<button type="button">All Time Favourite</button>
-		<br>
-		<br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooknBook</title>
+    
+    <script src="https://kit.fontawesome.com/6e80966125.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar-center">
+        <span class="nav-icon">
+            <i class="fas fa-bars"></i>
+        </span>
 
-		</header>
-		<section>
-			<h2>Collections</h2>
-			<div>
-			<div>
-				<strong>My Journey</strong>
-				&lt;&gt;
-				<span>Dr. A.P.J. Abdul Kalam</span>
-				&lt;&gt;
-				<span>Biography</span>
-				&lt;&gt;
-				<button type="button">BUY</button>
-				<hr>
-			</div>
-			<div>
-				<strong>Time Machine</strong>
-				&lt;&glt;
-				<span>H.G. Wells</span>
-				&lt;&gt;
-				<span>Fiction</span>
-				&lt;&gt;
-				<button type="button">BUY</button>
-				<hr>
-			</div>
-			<div>
-				<strong>Making of New India</strong>
-				&lt;&gt;
-				<span>Dr. Bibek Debroy</span>
-				&lt;&gt;
-				<span>History</span>
-				&lt;&gt;
-				<button type="button">BUY</button>
-				<hr>
-			</div>
-			 <div>
-                    <strong>The Moon and Six pence</strong>
-                    &lt;&gt;
-                    <span>Somerset Maughan</span>
-                    &lt;&gt;
-                    <span>Adventure</span>
-                    &lt;&gt;
-                    <button type="button">BUY</button>
-                    <hr>
+        <h1 class="icon">
+            <span id="b">Book</span><span id="n">n</span><span id="bb">Book</span>   
+        </h1>
+    
+        <div class="cart-btn">
+            <span class="nav-icon">
+                <i class="fas fa-cart-plus"></i>
+            </span>
+            <div class="cart-items">0</div>
+        </div>
+    </div>
+    </nav>
+    <!--end navbar-->
+
+    <!--hero-->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">Book collection</h1>
+            <button class="banner-btn">Buy now</button>
+        </div>
+    </header>
+    <!--end of hero-->
+
+    <!--products-->
+    <section class="products">
+        <div class="section-title">
+            <h2>our Collection</h2>
+        </div>
+        <div class="products-center">
+        </div>
+    </section>
+    <!--end products-->
+<!--cart-->
+<div class="cart-overlay">
+    <div class="cart">
+        <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+            <!--cart item-->
+            <div class="cart-item">
+                <img src="./images/product-1.jpeg" alt="product_in_cart"/>
+                <div>
+                    <h4>queen bed</h4>
+                    <h5>$9.00</h5>
+                    <span class="remove-item">remove</span>
                 </div>
                 <div>
-                    <strong>The Merchant of Venice</strong>
-                    &lt;&gt;
-                    <span>Shakespeare</span>
-                    &lt;&gt;
-                    <span>Adventure</span>
-                    &lt;&gt;
-                    <button type="button">BUY</button>
-                    <hr>
-                </div>
-                <div>
-                    <strong>Crime and Punishment</strong>
-                    &lt;&gt;
-                    <span>Dostoevsky</span>
-                    &lt;&gt;
-                    <span>Thriller</span>
-                    &lt;&gt;
-                    <button type="button">BUY</button>
+                    <i class="fas fa-chevron-up"></i>
+                    <p class="item-amount">1</p>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
-        </section>
-        <footer>
-        	<h3> BooknBook</h3>
-        	<ul>
-        		<li><img src="Images/YouTube Logo.png"></li>
-        		<li><img src="Images/Spotify Logo.png"></li>
-        		<li><img src="Images/Facebook Logo.png"></li>
-        	</ul>
-        </footer>
+        </div>
+        <div class="cart-footer">
+            <h3>your total:$ <span class="cart-total">
+            </span></h3>
+            <button class="clear-cart banner-btn">clear</button>
+        </div>
+    </div>
+</div>
+<!--end of cart-->
 
-
-
-	</body>
+    <script src="app.js"></script>
+    
+</body>
 </html>
